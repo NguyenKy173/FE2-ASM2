@@ -1,0 +1,32 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Laptop Dell XPS 13",
+      "price": 29990000,
+      "category": "Laptop",
+      "stock": 10,
+      "description": "Laptop mỏng nhẹ, hiệu năng cao với màn hình 4K.",
+      "image": "https://example.com/laptop-dell-xps13.jpg"
+    },
+    {
+      "id": 2,
+      "name": "iPhone 15 Pro Max",
+      "price": 34990000,
+      "category": "Smartphone",
+      "stock": 15,
+      "description": "Điện thoại flagship với chip A17 Bionic và camera 48MP.",
+      "image": "https://example.com/iphone-15-pro-max.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Samsung Galaxy S24 Ultra",
+      "price": 31990000,
+      "category": "Smartphone",
+      "stock": 12,
+      "description": "Màn hình Dynamic AMOLED 2X, bút S-Pen tiện lợi.",
+      "image": "https://example.com/samsung-s24-ultra.jpg"
+    }
+  ],
+  "users": []
+}
