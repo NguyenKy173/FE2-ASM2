@@ -1,7 +1,7 @@
 {
   "products": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Laptop Dell XPS 13",
       "price": 29990000,
       "category": "Laptop",
@@ -10,7 +10,7 @@
       "image": "https://example.com/laptop-dell-xps13.jpg"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "iPhone 15 Pro Max",
       "price": 34990000,
       "category": "Smartphone",
@@ -19,13 +19,31 @@
       "image": "https://example.com/iphone-15-pro-max.jpg"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Samsung Galaxy S24 Ultra",
       "price": 31990000,
       "category": "Smartphone",
       "stock": 12,
       "description": "Màn hình Dynamic AMOLED 2X, bút S-Pen tiện lợi.",
       "image": "https://example.com/samsung-s24-ultra.jpg"
+    },
+    {
+      "id": 0,
+      "name": "Sản phâmr 4",
+      "price": "12",
+      "category": "12",
+      "stock": "12",
+      "description": "12",
+      "image": "https://picsum.photos"
+    },
+    {
+      "id": "e2a2",
+      "name": "qư",
+      "price": 123213,
+      "category": "qư",
+      "stock": 12,
+      "description": "12",
+      "image": "https://picsum.photos"
     }
   ],
   "users": []
