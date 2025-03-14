@@ -110,7 +110,9 @@ const AdminDashboard = () => {
                       {product.stock > 0 ? `✅ Còn hàng: ${product.stock}` : "❌ Hết hàng"}
                     </td>
                     <td>
+                    <Link to={`/product/${product.id}/edit`}>
                       <button className="btn btn-warning me-2"> Cập nhật</button>
+                    </Link>
                       <button className="btn btn-danger" onClick={()=>handleDelete(product.id)}> Xóa</button>
                     </td>
                   </tr>
