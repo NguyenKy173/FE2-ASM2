@@ -40,7 +40,7 @@ const AddProduct = () => {
 
   return (
     <div className="d-flex vh-100 bg-light">
-      <div className="bg-dark text-white p-4 d-flex flex-column" style={{ width: "250px" }}>
+      <div className="bg-dark text-white p-4 d-flex flex-column" style={{ width: "300px" }}>
         <h2 className="text-center border-bottom pb-3">Admin Panel</h2>
         <ul className="nav flex-column mt-3">
           <li className="nav-item">

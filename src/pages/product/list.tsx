@@ -32,6 +32,23 @@ const AdminDashboard = () => {
 
     fetchProducts();
   }, []);
+  const handleDelete = async (id: number) => {
+    if (window.confirm("Bạn có chắc chắn muốn xóa sản phẩm này?")) {
+      try {
+        const response = await fetch(`http://localhost:3000/products/${id}`, {
+          method: "DELETE",
+        });
+        if (response.ok) {
+          setProducts(products.filter(product => product.id !== id));
+          // alert("Sản phẩm đã được xóa thành công!");
+        } else {
+          alert("Lỗi khi xóa sản phẩm!");
+        }
+      } catch (error) {
+        console.error("Lỗi khi xóa sản phẩm:", error);
+      }
+    }
+  };
 
   return (
     <div className="d-flex vh-100 bg-light">
@@ -93,8 +110,8 @@ const AdminDashboard = () => {
                       {product.stock > 0 ? `✅ Còn hàng: ${product.stock}` : "❌ Hết hàng"}
                     </td>
                     <td>
-                      <button className="btn btn-warning me-2">✏️ Cập nhật</button>
-                      <button className="btn btn-danger">🗑️ Xóa</button>
+                      <button className="btn btn-warning me-2"> Cập nhật</button>
+                      <button className="btn btn-danger" onClick={()=>handleDelete(product.id)}> Xóa</button>
                     </td>
                   </tr>
                 ))}
